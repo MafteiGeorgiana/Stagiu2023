@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Maftei Georgiana-Larisa" content="Form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <script src="dialog.js" defer type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="#AddTask">Add Task</a>
+        <a href="completedTasks.html">Completed Tasks</a>
+        <a href="progressTasks.html">Progress Tasks</a>
+    </div>
+    <h1>Add Task</h1>
+    <dialog id="favDialog">
+        <form>
+            <p>
+                <label for="title">Title Task</label>
+                <input type="text" id="title" name="title" maxlength="50" pattern="[A-Za-z0-9]+" required />
+                <label for="description">Description Task</label>
+                <textarea name="description" id="description" cols="16" rows="3" maxlength="250" required></textarea>
+                <label for="email">E-mail Assignee</label>
+                <input type="email" id="email" name="email" required />
+            </p>
+            <div class="add-task-btn">
+                <button id="cancelBtn" type="button" value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" type="submit" value="default">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+    <p>
+        <button id="add-task">Add Task</button>
+    </p>
+
+    <output></output>
+</body>
+
+</html>
