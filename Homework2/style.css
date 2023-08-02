@@ -188,27 +188,53 @@ h4 {
     grid-row: 1 / 3;
 }
 
-/* Extra small devices (phones, 600px and down) */ 
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   
+    main {
+        /* Un singur element pe coloană */
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "profile"
+            "name"
+            "content"
+            "img-mark";
+    }
+
+    h2,
+    h4 {
+        /* Anulez poziționarea pentru a afișa în fluxul normal */
+        grid-column: auto;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-   
+    main {
+        /* Două elemente pe coloană */
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "profile name"
+            "content img-mark";
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+    main {
+        /* Trei elemente pe coloană */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "profile name img-mark"
+            "content content content";
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
+    main {
+        /* Patru elemente pe coloană */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "profile name content img-mark";
+    }
 }
