@@ -7,7 +7,17 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@800&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/82c6d3b789.js" crossorigin="anonymous"></script>
+
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
 </head>
@@ -15,12 +25,7 @@
 <body>
   <main>
     <section id="sectionNav">
-      <div class="navLeft">
-        <figure>
-          <img src="./images/icon-messages.svg" alt="icon messages">
-        </figure>
-        <p class="navTxt">Huddle</p>
-      </div>
+      <img src="./images/logo.svg" alt="logo">
 
       <div class="buttonNav">
         <a href="#">Try it free</a> 
@@ -56,51 +61,96 @@
     </section>
 
     <section id="section1">
-      Grow Together
-      Generate meaningful discussions with your audience and build a strong, loyal community. 
-      Think of the insightful conversations you miss out on with a feedback form. 
-      <img src="./images/illustration-grow-together.svg" alt="illustration grow together">
+      <div class="imgSection1">
+        <img src="./images/bg-section-top-desktop-1.svg" alt="bg section top desktop 1"><img src="./images/bg-section-bottom-desktop-1.svg" alt="section bottom desktop 1">
+      </div>
+      <div class="article3">
+        <article>
+          <div class="article3Txt">
+            <h1>Grow Together</h1>
+            <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form.</p>
+          </div>
+          <img src="./images/illustration-grow-together.svg" alt="illustration grow together">
+        </article>
+      </div>
     </section>
 
     <section id="section2">
-      <img src="./images/illustration-flowing-conversation.svg" alt="illustration flowing conversation">
-      Flowing Conversations
-      You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-      just-in-time loading for a more natural flow.
+      <div class="article4">
+        <article>
+          <img src="./images/illustration-flowing-conversation.svg" alt="illustration flowing conversation">
+          <div class="article4Txt">
+            <h1>Flowing Conversations</h1>
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+            just-in-time loading for a more natural flow.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="section3">
-      Your Users
-      It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-      once signed in to your app, your users can start chatting immediately.
-      <img src="./images/illustration-your-users.svg" alt="illustration your users">
-
-      Ready To Build Your Community?
-      Get Started For Free
+      <div class="imgSection3">
+        <img src="./images/bg-section-top-desktop-2.svg" alt="bg section top desktop 2"><img src="./images/bg-section-bottom-desktop-2.svg" alt="bg section bottom desktop 2">
+      </div>
+      <div class="article5">
+        <article>
+          <div class="article5Txt">
+            <h1>Your Users</h1>
+            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+            once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+          <img src="./images/illustration-your-users.svg" alt="illustration your users">
+        </article>
+      </div>
     </section>
 
-    <aside>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-      vestibulum a, ultrices quis sem.
-      
-      Phone: +1-543-123-4567
-      example@huddle.com
+    <section id="section4">
+      <h1>Ready To Build Your Community?</h1>
+      <a href="#">Get Started For Free</a>
+   </section>
 
-      Newsletter
-      To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-      send you spam or pass on your email address
+    <aside id="aside">
+      <img class="imgAside" src="./images/bg-footer-top-desktop.svg" alt="bg footer top desktop">
+      <section id="section5">
+        <div class="asideLeft">
+          <div class="logo">
+            <img src="./images/icon-messages.svg" alt="icon messages">
+            <p class="logoTxt">Huddle</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.</p>
+          <div class="contacts">
+            <div class="contactPhone">
+              <img src="./images/icon-phone.svg" alt="phone">
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="contactEmail">
+              <img src="./images/icon-email.svg" alt="icon email">
+              <p>example@huddle.com</p>
+            </div>
+          </div>
+          <div class="contactIcons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+        </div>
 
-      Subscribe
+        <div class="asideRight">
+          <h1>Newsletter</h1>
+          <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address</p>
+
+          <form>
+            <input type="email" name="subscribe" id="subscribe" required>
+            <button id="subscribeButton" type="submit" value="default">Subscribe</button>
+          </form>
+        </div>
+      </section>
     </aside>
 
   </main>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 
 </body>
 </html>
