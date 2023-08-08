@@ -289,7 +289,7 @@ article {
 }
 
 .imgAside {
-    margin-top: 50px;
+    margin-top: 150px;
     position: relative;
 }
 
@@ -332,6 +332,10 @@ article {
 .asideRight h1 {
     text-transform: uppercase;
     font-size: 1.8rem;
+    margin: 5px 5px;
+    padding-bottom: 18px;
+    bottom: -10px;
+    position: relative;
 }
 
 .contacts {
