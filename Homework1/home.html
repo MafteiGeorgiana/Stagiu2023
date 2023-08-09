@@ -4,36 +4,48 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="Maftei Georgiana-Larisa" content="Form">
+        <meta name="Maftei Georgiana-Larisa" content="Tasks Management">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Home Tasks Management</title>
-        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="styleHome.css">
     </head>
 
     <body>
-        <h1 class="titleHome">Tasks Management</h1>
-        <div class="centerHome">
-            <div class="row">
-                <div class="column">
-                    <div class="cardHome">
-                        <img class="imgHome" src="./images/addTask.png" alt="Add Task">
-                        <p><button class="buttonHome" onclick="window.location.href='addTask.html'">Add Task</button></p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="cardHome">
-                        <img class="imgHome" src="./images/completedTasks.png" alt="Completed Tasks">
-                        <p><button class="buttonHome" onclick="window.location.href='completedTasks.html'">Completed Tasks</button></p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="cardHome">
-                        <img class="imgHome" src="./images/progressTasks.png" alt="Progress Tasks">
-                        <p><button class="buttonHome" onclick="window.location.href='progressTasks.html'">Progress Tasks</button></p>
-                    </div>
+        <header class="titleHome">
+            <h1 >Tasks Management</h1>
+        </header>
+        <main>
+            <div class="centerHome">
+                <div class="row">
+                        <div class="column">
+                            <div class="cardHome">
+                                <figure class="imgHome">
+                                    <img  src="./images/addTask.png" alt="Add Task">
+                                </figure>
+                                <p><a class="buttonHome" href="addTask.html">Add Task</a></p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="cardHome">
+                                <figure class="imgHome">
+                                    <img  src="./images/completedTasks.png" alt="Completed Tasks">
+                                </figure>
+                                <p><a class="buttonHome" href="completedTasks.html">Completed Tasks</a></p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="cardHome">
+                                <figure class="imgHome">
+                                    <img  src="./images/progressTasks.png" alt="Progress Tasks">
+                                </figure>
+                                <p><a class="buttonHome" href="progressTasks.html">Progress Tasks</a></p>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
+        </main>
 
     </body>
 

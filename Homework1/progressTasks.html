@@ -6,24 +6,51 @@
     <meta charset="UTF-8">
     <meta name="Maftei Georgiana-Larisa" content="Form">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Progress Tasks</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styleProgressTasks.css">
+
     <script src="progressTasks.js" defer></script>
 </head>
 
 <body>
-  <div class="topnav">
+  <nav class="topnav">
         <a href="home.html">Home</a>
         <a href="addTask.html">Add Task</a>
         <a href="#ProgressTasks">Progress Tasks</a>
         <a href="completedTasks.html">Completed Tasks</a>
-  </div>
+  </nav>
+  <header class="titleProgressTasks">
     <h1>Progress Tasks</h1>
+  </header>
+  <main>
     <div class="centerProgressTasks">
       <div class="row" id="progressTasksContainer">
         <!-- Aici vor fi afișate cardurile cu task-uri -->
       </div>
     </div>
+
+    <dialog id="editDialog">
+      <form>
+       <p>
+          <label for="edit-title">Title Task</label>
+          <input type="text" id="edit-title" maxlength="50" pattern="[A-Za-z0-9]+" required>
+      
+          <label for="edit-description">Description Task</label>
+          <textarea id="edit-description" cols="16" rows="3" maxlength="250" required></textarea>
+      
+          <label for="edit-email">E-mail Assignee</label>
+          <input type="email" id="edit-email" required>
+        </p>
+    
+        <div class="add-task-btn">
+          <button type="button" id="editCancelButton">Cancel</button>
+          <button type="button" id="editConfirmButton">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
     
     <script src="progressTasks.js" defer></script>
     <script src="addProgressTasksInCompletedTasks.js" defer></script>

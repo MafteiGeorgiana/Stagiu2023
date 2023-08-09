@@ -1,0 +1,273 @@
+/* :root {
+  font-size: 13px;
+} */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(106, 154, 138);
+}
+
+#editCancelButton,
+#editConfirmButton {
+    padding: 10px;
+    border-color: rgb(106, 154, 138);
+    background-color: rgb(106, 154, 138);
+    border-radius: 8px;
+    margin: 5px 15px;
+}
+
+#editCancelButton:hover,
+#editConfirmButton:hover {
+    opacity: 0.7;
+}
+
+#editDialog {
+    width: 550px;
+    height: 400px;
+    margin-top: 170px;
+    border-radius: 8px;
+    background-color: orange;
+    border-color: orange;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: orange;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    background-color: orange;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+    padding: 17px 17px;
+}
+
+.topnav a[href="home.html"] {
+    font-weight: bold;
+    font-size: large;
+}
+
+.titleProgressTasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 10px 10px;
+}
+
+.centerHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.plus,
+.edit {
+    margin-top: 5px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.trash {
+    height: 30px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.plus:hover,
+.trash:hover,
+.edit:hover {
+    opacity: 0.7;
+}
+
+.centerProgressTasks {
+    position: absolute;
+    padding-left: 0px;
+    padding-right: 0px;
+    place-items: center stretch;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+}
+
+.cardProgressTasks {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 300px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+.contentCardProgressTasks {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 280px;
+    height: 240px;
+}
+
+.second button {
+    background-color: rgba(0, 184, 113, 0);
+    color: white;
+    margin-top: 0px;
+    height: 40px;
+    width: 30px;
+    font-family: serif;
+    text-align: center;
+    font-size: small;
+    padding: 0px;
+    border: none;
+}
+
+.second p {
+    float: right;
+    font-size: 0rem;
+    padding: 0px;
+    padding-right: 1%;
+    align-items: center;
+}
+
+div.second {
+    background-color: orange;
+    height: 40px;
+    padding-top: 0px;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.second p.titleTask {
+    color: black;
+    font-family: serif;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    float: left;
+    margin-left: 6px;
+    margin-top: 10px;
+    height: 20px;
+    width: 190px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+.titleContentTask {
+    font-weight: bold;
+    font-size: large;
+    color: orange;
+    cursor: pointer;
+}
+
+.titleContentTask:hover {
+    color: black;
+    font-size: x-large;
+}
+
+.buttonTask {
+    cursor: pointer;
+    text-align: right;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    height: 20%;
+    min-width: 220px;
+    margin-bottom: 16px;
+    padding: 10px;
+    flex: 1;
+}
+
+#confirmBtn {
+    padding: 10px;
+    border-color: rgb(106, 154, 138);
+    background-color: rgb(106, 154, 138);
+    border-radius: 8px;
+    margin: 5px 15px;
+}
+
+#confirmBtn:hover {
+    opacity: 0.7;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+label[for="description"],
+label[for="edit-description"] {
+    margin-top: 15px;
+}
+
+textarea {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 3px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(106, 154, 138);
+    border-color: rgb(106, 154, 138);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid rgb(106, 154, 138);
+    outline: none;
+}

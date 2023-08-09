@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <meta name="Maftei Georgiana-Larisa" content="Form">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Completed Tasks</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styleCompletedTasks.css">
 </head>
 
 <body>
-    <div class="topnav">
+    <nav class="topnav">
         <a href="home.html">Home</a>
         <a href="addTask.html">Add Task</a>
         <a href="progressTasks.html">Progress Tasks</a>
         <a href="#CompletedTasks">Completed Tasks</a>
-    </div>
-    <h1>Completed Tasks</h1>
-    <div class="centerProgressTasks">
-        <div class="row" id="completedTasksContainer">
-            <!-- Aici vor fi afișate cardurile cu task-uri complete -->
+    </nav>
+    <header class="titleCompletedTasks">
+        <h1>Completed Tasks</h1>
+    </header>
+    <main>
+        <div class="centerProgressTasks">
+            <div class="row" id="completedTasksContainer">
+                <!-- Aici vor fi afișate cardurile cu task-uri complete -->
+            </div>
         </div>
-    </div>
+    </main>
 
     <script src="completedTasks.js" defer></script>
     <script src="handelerDeleteCompletedTask.js" defer></script>
