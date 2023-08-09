@@ -77,3 +77,71 @@ a {
     display: flex;
     justify-content: center;
 }
+
+/* Stilurile pentru ecrane extra mici (telefoane, până la 600px) */
+@media only screen and (max-width: 600px) {
+   
+    .column {
+        width: 100%;
+        margin-bottom: -30px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .titleHome {
+        font-size: 24px;
+    }
+
+    .imgHome img {
+        height: 90px;
+    }
+}
+
+/* Stilurile pentru ecrane mici (tablete portret și telefoane mari, începând de la 600px) */
+@media only screen and (min-width: 600px) {
+ 
+    .column {
+        width: 100%;
+    }
+
+    .titleHome {
+        font-size: 26px;
+    }
+}
+
+/* Stilurile pentru ecrane medii (tablete în peisaj, începând de la 768px) */
+@media only screen and (min-width: 768px) {
+
+    .column {
+        width: 33.33%;
+    }
+
+    .titleHome {
+        font-size: 28px;
+    }
+
+    .imgHome img {
+        height: 120px;
+    }
+}
+
+/* Stilurile pentru ecrane mari (laptopuri/desktopuri, începând de la 992px) */
+@media only screen and (min-width: 992px) {
+    :root {
+        font-size: 18px;
+    }
+
+    .column {
+        width: 25%;
+    }
+
+    .titleHome {
+        font-size: 30px;
+    }
+
+    .imgHome img {
+        height: 140px;
+    }
+}

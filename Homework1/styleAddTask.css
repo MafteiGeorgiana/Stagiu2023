@@ -41,9 +41,8 @@ body {
 #favDialog {
     width: 550px;
     height: 400px;
-    margin-top: 210px;
+    margin-top: 240px;
     border-radius: 8px;
-    opacity: 0.7;
     background-color: orange;
     border-color: orange;
 }
@@ -136,4 +135,32 @@ textarea:focus {
 .topnav a[href="home.html"] {
     font-weight: bold;
     font-size: large;
+}
+
+/* Stilurile pentru ecrane extra mici (telefoane, până la 600px) */
+@media only screen and (max-width: 600px) {
+    .titleAddTask {
+        font-size: 24px;
+    }
+
+    #add-task {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    #favDialog {
+        width: 90%;
+        max-width: none;
+        margin-top: 210px;
+    }
+}
+
+/* Stilurile pentru ecrane mici și mai mari (600px și mai sus) */
+@media only screen and (min-width: 600px) {
+
+    #favDialog {
+        width: 550px;
+        max-width: 100%;
+    }
+
 }
